@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store Locator - Add Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body class="has-background-primary">
+    <section class="section">
+        <div class="container has-text-centered" style="width: 400px;">
+            <h1 class="title has-text-white">
+                Add Store
+            </h1>
+            <a href="/" class="button">
+                <span class="icon is-small">
+                    <i class="fas fa-map-marked"></i>
+                </span>
+                <span>View Stores</span>
+            </a>
+
+            <form id="store-form">
+                <div class="field" style="margin-top: 15px;">
+                    <p class="control has-icons-left">
+                    <input class="input" id="store-id" type="text" placeholder="Store ID">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-hashtag"></i>
+                    </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                    <input class="input" id="store-address" type="text" placeholder="Store Address">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-location-arrow"></i>
+                    </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control">
+                    <button class="button is-white">
+                        Add Store
+                    </button>
+                    </p>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <script src="./js/add.js"></script>
+</body>
+</html>
