@@ -6,3 +6,6 @@ Store locator API that servers GeoJSON data to a front-end that maps stores on a
 - MongoDB with mongoose
 - GeoJSON and MapBox
 - CSS Bulma for front-end
+
+Deployed with Heroku
+https://store-locator-api-sdb.herokuapp.com/
