@@ -2,10 +2,10 @@ const path = require('path');
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const connectDB = require('./config/db.js');
+const connectDB = require('/config/db');
 
 // Load env variables
-dotenv.config({ path: './config/config.env' });
+dotenv.config({ path: '/config/config.env' });
 
 // Connect to database
 connectDB();
@@ -22,7 +22,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.use('/api/v1/stores', require('./routes/stores'));
+app.use('/api/v1/stores', require('/routes/stores'));
 
 const PORT = process.env.PORT || 5000;
 
